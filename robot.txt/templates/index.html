@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MVSr CTF — Robots Challenge</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+           margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+           background:#f6f9ff; color:#111; padding:2rem; }
+    .card { background:white; padding:1.6rem; border-radius:12px; box-shadow:0 8px 24px rgba(10,20,40,0.06);
+           display:grid; grid-template-columns: 220px 1fr; gap:1rem; align-items:center; max-width:900px; width:100%; }
+    img { max-width:200px; border-radius:8px; display:block; margin:auto; }
+    h1 { margin:0 0 .25rem 0; font-size:1.3rem; }
+    p { margin:.25rem 0; color:#555; }
+    code { background:#f2f6ff; padding:.1rem .35rem; border-radius:6px; font-family: monospace; }
+    .cta { margin-top:.8rem; display:inline-block; padding:.45rem .7rem; background:#0b63ff; color:#fff; border-radius:8px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <!-- Place your robot image as static/robot.png -->
+      <img src="{{ url_for('static', filename='robot.jpg') }}" alt="robot" />
+    </div>
+    <div>
+      <h1>MVSr CTF — robots.txt challenge</h1>
+      <p>This is a beginner web CTF. Check the site's <code>/robots.txt</code> and follow the disallowed path to find the flag.</p>
+      <p class="hint"><strong>Hint:</strong> open <code>/robots.txt</code> in your browser.</p>
+      <a class="cta" href="/robots.txt">Open robots.txt</a>
+    </div>
+  </div>
+</body>
+</html>

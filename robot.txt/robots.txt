@@ -1,0 +1,6 @@
+# robots.txt for MVSr CTF site
+User-agent: *
+Disallow: /s3cr3t_fl4g.txt
+# decoys:
+Disallow: /admin/
+Disallow: /backup/
